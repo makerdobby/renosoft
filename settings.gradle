@@ -1,0 +1,4 @@
+rootProject.name = 'renosoft'
+include 'home'
+include 'portal'
+include 'common'

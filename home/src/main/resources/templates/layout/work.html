@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <!-- head -->
+    <th:block th:replace="fragments/head :: headFragment"></th:block>
+
+    <!-- body -->
+    <body id="top" class="sub">
+
+        <div class="btn-back">
+            <button onclick="history.back()"><span class="hdn-txt">뒤로가기</span></button>
+        </div>
+
+        <!-- container -->
+        <th:block layout:fragment="container"></th:block>
+
+        <!-- script -->
+        <th:block layout:fragment="script"></th:block>
+
+    </body>
+
+</html>

@@ -1,0 +1,9 @@
+# 포트설정 (SSL 확인할 것)
+server:
+  port: 8000
+
+spring:
+  application:
+    name: renosoft_home
+  thymeleaf:
+    cache: false
