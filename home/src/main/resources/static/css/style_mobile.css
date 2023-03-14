@@ -367,9 +367,10 @@ img {width:100%; height:auto;}
     background-size: cover;
 }
 /* location */
-.loaction .map {
+.location .map {
+    height:250px;
 }
-.loaction .wrap.map {
+.location .wrap.map {
     padding-top:60px;
 }
 .company-info {
