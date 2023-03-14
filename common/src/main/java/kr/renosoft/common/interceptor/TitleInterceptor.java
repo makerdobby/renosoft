@@ -20,7 +20,7 @@ public class TitleInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response
         , Object handler, ModelAndView modelAndView) throws Exception {
 
-        String title = "RENOSOFT 레노 소프트";
+        String title = "RENOSOFT 레노소프트";
         String uri = request.getRequestURI();
 
         /* TODO 데이터화가 되면 그때 따로 처리하자 */

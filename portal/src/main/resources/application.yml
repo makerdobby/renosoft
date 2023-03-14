@@ -4,6 +4,6 @@ server:
 
 spring:
   application:
-    name: renosoft_portal
+    name: portal
   thymeleaf:
     cache: false

@@ -159,7 +159,7 @@ img {width:100%; height:auto;}
 }
 /* about */
 .sub-sec01 .wrap,.sub-sec02 .wrap,.sub-sec03 .wrap,.sub-sec04 .wrap {
-    padding:10vmin 0;
+    padding:10vmin 0 15vmin;
     min-height: 500px;
 }
 .sub-sec01 .tit-sub {
@@ -171,23 +171,24 @@ img {width:100%; height:auto;}
     padding:0 16px;
 }
 .about-box .about-list {
-    padding:15px 15px;
-    width: 47%;
-    border-radius:0.625rem 0 0 0;
+    padding:0 15px;
+    width: 100%;
 }
 .about-box .about-list .thumb {
-    width:44px;
+    min-width:44px;
     height:44px;
     background-size: 100%;
 }
-.about-box .about-list p {
-    position: absolute;
-    left:66px;
-    top:23px;
-    width: 50%;
+.about-box .about-list p.tit { 
     font-size: 12px;
-    line-height:1.2;
-    text-align: left;
+    letter-spacing: -0.1rem;
+}
+.about-box .about-list p {
+    font-size:12px;
+    line-height: 1.4;
+}
+.about-box .about-list .explain {
+    padding-left:10px;
 }
 .about-box .about-list p small {
     display:none;
@@ -296,6 +297,40 @@ img {width:100%; height:auto;}
 .client-box li img {
     width: 100%;
 }
+.work-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.work-list li {
+    position: relative;
+    margin:4px 0;
+    padding:12px 15px 12px 76px;
+    width: 100%;
+}
+.work-list li small {
+    position: absolute;
+    top:15px;
+    left:15px;
+    display: block;
+    max-width: 45px;
+    line-height: 1.4;
+    font-size:12px;
+}
+.work-list li .work-tit {
+    font-size:12px;
+}
+.work-list li .date {
+    font-size:10px;
+}
+/* Tabs */
+.tabs { gap:5px; margin-top:20px; padding:0 15px 10px; box-sizing: border-box;}
+.tabs .tabs-item { width: calc(50% - 3px);}
+.tabs .tabs-link { padding: 2px 8px; width:100%; height: 28px; font-size:12px; border-radius: 20px;}
+.tabs .active .tabs-link {}
+.tabs .tabs-item:first-child .tabs-link {}
+.tabs .tabs-item:first-child.active .tabs-link {}
+.tabs-content .tabs-content-item {padding: 15px;}
+.tabs-content .tabs-content-item.active { }
 /* work */
 .work-wrap {
     margin-left:16px;
@@ -332,9 +367,9 @@ img {width:100%; height:auto;}
     background-size: cover;
 }
 /* location */
-.location .map {
+.loaction .map {
 }
-.location .wrap.map {
+.loaction .wrap.map {
     padding-top:60px;
 }
 .company-info {
@@ -409,7 +444,7 @@ img {width:100%; height:auto;}
 
 /* slick */
 .about .slide-dots { 
-    bottom:22px;
+    bottom:5vmin;
 }
 .about .slide-dots li { 
     margin:7px 0 0 11px; 

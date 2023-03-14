@@ -21,7 +21,19 @@ $(function () {
         scroll_chk();
     });
     
+   	let $tabs = $('.tabs'),
+    
+    $tabsLink = $tabs.find('.tabs-link'),
+    $tabsCont = $('.tabs-content .tabs-content-item');
 
+    $tabsLink.on('click', function(e){
+        let hrefHash = $(this).attr('href');
+        $(this).parent().addClass('active').siblings().removeClass('active');
+        $tabsCont.removeClass('active');
+        $(hrefHash).addClass('active');
+        e.preventDefault();
+    });
+    
     //Functions
     sc_move();
     
@@ -73,7 +85,7 @@ function mobile_menu(){
 
 //scroll moving
 function sc_move(){
-    $(document).on('click', 'a[href^="#"]', function (e) {
+    $(document).on('click', '#header a[href^="#"]', function (e) {
         e.preventDefault();
     
         if ($('body').hasClass('pc')) {
